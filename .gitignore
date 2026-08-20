@@ -12,5 +12,6 @@ frontend/.env
 
 # Editors / OS
 .DS_Store
-.vscode/
+.vscode/*
+!.vscode/settings.json
 *.log

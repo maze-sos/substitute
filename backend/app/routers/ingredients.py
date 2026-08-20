@@ -54,7 +54,10 @@ def get_substitution_path(from_id: str, to_id: str) -> SubstitutionPath:
     rows = run_query(queries.SUBSTITUTION_PATH, {"from_id": from_id, "to_id": to_id})
     nodes = rows[0]["path_nodes"] if rows else None
     rels = rows[0]["path_rels"] if rows else None
-    if not nodes:
+    # path_nodes and path_rels come from the same Cypher `path` variable, so
+    # they're null together whenever no path was found — check both so the
+    # type checker (and a future reader) doesn't have to trust that invariant.
+    if not nodes or not rels:
         return SubstitutionPath(found=False)
     steps = [
         SubstitutionEdge(

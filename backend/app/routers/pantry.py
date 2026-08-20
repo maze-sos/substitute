@@ -1,6 +1,6 @@
 from collections import defaultdict
 
-from fastapi import APIRouter
+from fastapi import APIRouter, Query
 from pydantic import BaseModel
 
 from app import queries
@@ -15,7 +15,7 @@ class PantryRequest(BaseModel):
 
 
 @router.post("/match", response_model=list[PantryMatch])
-def match_pantry(payload: PantryRequest, limit: int = 20) -> list[PantryMatch]:
+def match_pantry(payload: PantryRequest, limit: int = Query(default=20, ge=1, le=100)) -> list[PantryMatch]:
     """
     "What can I almost cook?" — a recipe qualifies if every non-optional
     ingredient it needs is either directly in the pantry, or reachable from
@@ -51,16 +51,25 @@ def match_pantry(payload: PantryRequest, limit: int = 20) -> list[PantryMatch]:
     for rid, needs in needs_by_recipe.items():
         have_directly: list[IngredientBrief] = []
         have_via_substitution: list[SubstitutionEdge] = []
-        missing: list[IngredientBrief] = []
+        blocked = False
 
         for need in needs:
-            ingredient = IngredientBrief(
-                id=need["ingredient_id"],
-                name=need["ingredient_name"],
-                category=need["ingredient_category"],
-            )
             if need["ingredient_id"] in pantry_ids:
-                have_directly.append(ingredient)
+                have_directly.append(
+                    IngredientBrief(
+                        id=need["ingredient_id"],
+                        name=need["ingredient_name"],
+                        category=need["ingredient_category"],
+                    )
+                )
+                continue
+
+            # Optional ingredients never block a match and never need a
+            # substitution note — checked before the bridge lookup so an
+            # unavailable optional ingredient doesn't surface a "use X
+            # instead of Y" suggestion for something the recipe didn't
+            # actually require.
+            if need["optional"]:
                 continue
 
             bridge = bridges.get((rid, need["ingredient_id"]))
@@ -71,12 +80,10 @@ def match_pantry(payload: PantryRequest, limit: int = 20) -> list[PantryMatch]:
                 )
                 continue
 
-            if need["optional"]:
-                continue
+            blocked = True
+            break
 
-            missing.append(ingredient)
-
-        if missing:
+        if blocked:
             continue
 
         results.append(
@@ -84,7 +91,6 @@ def match_pantry(payload: PantryRequest, limit: int = 20) -> list[PantryMatch]:
                 recipe=recipes[rid],
                 have_directly=have_directly,
                 have_via_substitution=have_via_substitution,
-                missing=[],
             )
         )
 

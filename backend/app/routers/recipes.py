@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException, Query
 
 from app import queries
 from app.db import run_query
-from app.models import RecipeBrief, RecipeDetail, RecipeWithScore
+from app.models import CuisineBrief, RecipeBrief, RecipeDetail, RecipeWithScore
 
 router = APIRouter(prefix="/api/recipes", tags=["recipes"])
 
@@ -21,10 +21,10 @@ def list_recipes(
     return [RecipeBrief(**row) for row in rows]
 
 
-@router.get("/cuisines", response_model=list[str])
-def list_cuisines() -> list[str]:
+@router.get("/cuisines", response_model=list[CuisineBrief])
+def list_cuisines() -> list[CuisineBrief]:
     rows = run_query(queries.CUISINE_LIST)
-    return [row["name"] for row in rows]
+    return [CuisineBrief(**row) for row in rows]
 
 
 @router.get("/{recipe_id}", response_model=RecipeDetail)

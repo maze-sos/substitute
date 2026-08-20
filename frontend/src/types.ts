@@ -4,6 +4,11 @@ export interface IngredientBrief {
   category: string;
 }
 
+export interface CuisineBrief {
+  id: string;
+  name: string;
+}
+
 export interface RecipeBrief {
   id: string;
   name: string;
@@ -56,5 +61,4 @@ export interface PantryMatch {
   recipe: RecipeBrief;
   have_directly: IngredientBrief[];
   have_via_substitution: SubstitutionEdge[];
-  missing: IngredientBrief[];
 }

@@ -7,6 +7,11 @@ class IngredientBrief(BaseModel):
     category: str
 
 
+class CuisineBrief(BaseModel):
+    id: str
+    name: str
+
+
 class RecipeBrief(BaseModel):
     id: str
     name: str
@@ -59,4 +64,3 @@ class PantryMatch(BaseModel):
     recipe: RecipeBrief
     have_directly: list[IngredientBrief]
     have_via_substitution: list[SubstitutionEdge]
-    missing: list[IngredientBrief]

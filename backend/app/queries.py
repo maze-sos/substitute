@@ -2,11 +2,14 @@
 # neo4j driver's parameter binding (see app/db.py::run_query) — no string
 # concatenation of user input into Cypher, ever.
 
+# Filters by traversing BELONGS_TO rather than comparing the flat
+# r.cuisine slug directly, so the relationship modeled for this purpose
+# is the thing actually doing the filtering.
 RECIPE_LIST = """
-MATCH (r:Recipe)
+MATCH (r:Recipe)-[:BELONGS_TO]->(cu:Cuisine)
 WHERE ($search = '' OR toLower(r.name) CONTAINS toLower($search))
-  AND ($cuisine = '' OR r.cuisine = $cuisine)
-RETURN r.id AS id, r.name AS name, r.cuisine AS cuisine,
+  AND ($cuisine = '' OR cu.id = $cuisine)
+RETURN r.id AS id, r.name AS name, cu.id AS cuisine,
        r.prep_minutes AS prep_minutes, r.servings AS servings, r.image_url AS image_url
 ORDER BY r.name
 SKIP $skip LIMIT $limit
@@ -14,7 +17,7 @@ SKIP $skip LIMIT $limit
 
 CUISINE_LIST = """
 MATCH (c:Cuisine)
-RETURN c.name AS name
+RETURN c.id AS id, c.name AS name
 ORDER BY c.name
 """
 

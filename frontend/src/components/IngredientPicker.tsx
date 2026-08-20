@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { api } from "../api/client";
 import type { IngredientBrief } from "../types";
 
@@ -13,6 +13,13 @@ export function IngredientPicker({ placeholder = "Search ingredients…", exclud
   const [results, setResults] = useState<IngredientBrief[]>([]);
   const [open, setOpen] = useState(false);
 
+  // Callers (Pantry, IngredientDetail) pass a fresh excludeIds array every
+  // render, which would otherwise re-fire this debounce on every parent
+  // re-render. A ref lets the effect read the latest value without
+  // depending on array identity.
+  const excludeIdsRef = useRef(excludeIds);
+  excludeIdsRef.current = excludeIds;
+
   useEffect(() => {
     if (!query.trim()) {
       setResults([]);
@@ -23,7 +30,7 @@ export function IngredientPicker({ placeholder = "Search ingredients…", exclud
       api
         .listIngredients({ search: query, limit: 8 })
         .then((res) => {
-          if (!cancelled) setResults(res.filter((i) => !excludeIds.includes(i.id)));
+          if (!cancelled) setResults(res.filter((i) => !excludeIdsRef.current.includes(i.id)));
         })
         .catch(() => {
           if (!cancelled) setResults([]);
@@ -33,7 +40,7 @@ export function IngredientPicker({ placeholder = "Search ingredients…", exclud
       cancelled = true;
       clearTimeout(t);
     };
-  }, [query, excludeIds]);
+  }, [query]);
 
   return (
     <div className="relative">

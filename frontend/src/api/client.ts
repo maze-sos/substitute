@@ -1,4 +1,5 @@
 import type {
+  CuisineBrief,
   IngredientBrief,
   IngredientDetail,
   PairingSuggestion,
@@ -45,8 +46,6 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
 }
 
 export const api = {
-  health: () => request<{ status: string; database: string }>("/api/health"),
-
   listRecipes: (params: { search?: string; cuisine?: string; skip?: number; limit?: number } = {}) => {
     const qs = new URLSearchParams();
     if (params.search) qs.set("search", params.search);
@@ -57,7 +56,7 @@ export const api = {
     return request<RecipeBrief[]>(`/api/recipes${suffix}`);
   },
 
-  listCuisines: () => request<string[]>("/api/recipes/cuisines"),
+  listCuisines: () => request<CuisineBrief[]>("/api/recipes/cuisines"),
 
   listIngredients: (params: { search?: string; limit?: number } = {}) => {
     const qs = new URLSearchParams();

@@ -3,7 +3,6 @@ import { api } from "../api/client";
 import { useApi } from "../lib/useApi";
 import { RecipeCard } from "../components/RecipeCard";
 import { LoadingState, EmptyState, ErrorBanner } from "../components/states";
-import { formatCuisineName } from "../lib/cuisineTheme";
 import type { RecipeBrief } from "../types";
 
 export function Home() {
@@ -50,8 +49,8 @@ export function Home() {
         >
           <option value="">All cuisines</option>
           {cuisines?.map((c) => (
-            <option key={c} value={c}>
-              {formatCuisineName(c)}
+            <option key={c.id} value={c.id}>
+              {c.name}
             </option>
           ))}
         </select>
