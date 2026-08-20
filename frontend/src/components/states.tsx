@@ -1,4 +1,6 @@
 import type { ReactNode } from "react";
+import { AlertTriangle, ChefHat, type LucideIcon } from "lucide-react";
+import { Button } from "./Button";
 
 interface LoadingStateProps {
   label?: string;
@@ -6,7 +8,7 @@ interface LoadingStateProps {
 
 export function LoadingState({ label = "Loading…" }: LoadingStateProps) {
   return (
-    <div className="flex flex-col items-center justify-center gap-3 py-20 text-muted">
+    <div className="flex flex-col items-center justify-center gap-3 py-20 text-muted" role="status">
       <div className="h-8 w-8 animate-spin rounded-full border-2 border-sand-dark border-t-terracotta" />
       <p className="text-sm">{label}</p>
     </div>
@@ -14,16 +16,18 @@ export function LoadingState({ label = "Loading…" }: LoadingStateProps) {
 }
 
 interface EmptyStateProps {
-  icon?: string;
+  icon?: LucideIcon;
   title: string;
   description?: string;
   action?: ReactNode;
 }
 
-export function EmptyState({ icon = "🍽️", title, description, action }: EmptyStateProps) {
+export function EmptyState({ icon: Icon = ChefHat, title, description, action }: EmptyStateProps) {
   return (
-    <div className="flex flex-col items-center justify-center gap-2 rounded-2xl border border-dashed border-sand-dark bg-cream-dim px-6 py-16 text-center">
-      <span className="text-3xl">{icon}</span>
+    <div className="flex flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-sand-dark bg-cream-dim px-6 py-16 text-center">
+      <div className="flex h-11 w-11 items-center justify-center rounded-full bg-sand text-ink-soft">
+        <Icon aria-hidden="true" size={20} strokeWidth={1.75} />
+      </div>
       <h3 className="font-display text-lg font-medium text-ink">{title}</h3>
       {description && <p className="max-w-sm text-sm text-muted">{description}</p>}
       {action}
@@ -38,17 +42,19 @@ interface ErrorBannerProps {
 
 export function ErrorBanner({ message, onRetry }: ErrorBannerProps) {
   return (
-    <div className="flex flex-col items-center justify-center gap-3 rounded-2xl border border-terracotta/30 bg-terracotta/10 px-6 py-16 text-center">
-      <span className="text-3xl">⚠️</span>
+    <div
+      role="alert"
+      className="flex flex-col items-center justify-center gap-3 rounded-2xl border border-terracotta/30 bg-terracotta/10 px-6 py-16 text-center"
+    >
+      <div className="flex h-11 w-11 items-center justify-center rounded-full bg-terracotta/15 text-terracotta-dark">
+        <AlertTriangle aria-hidden="true" size={20} strokeWidth={1.75} />
+      </div>
       <h3 className="font-display text-lg font-medium text-terracotta-dark">Something went wrong</h3>
       <p className="max-w-sm text-sm text-ink-soft">{message}</p>
       {onRetry && (
-        <button
-          onClick={onRetry}
-          className="mt-1 rounded-full bg-terracotta px-4 py-2 text-sm font-medium text-cream transition hover:bg-terracotta-dark"
-        >
+        <Button variant="primary" onClick={onRetry} className="mt-1">
           Try again
-        </button>
+        </Button>
       )}
     </div>
   );

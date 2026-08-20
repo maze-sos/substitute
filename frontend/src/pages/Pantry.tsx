@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { CheckCircle2, HelpCircle, ShoppingBasket, X } from "lucide-react";
 import { api, ApiError } from "../api/client";
+import { Button } from "../components/Button";
 import { IngredientPicker } from "../components/IngredientPicker";
 import { RecipePlaceholderArt } from "../components/RecipePlaceholderArt";
 import { LoadingState, EmptyState, ErrorBanner } from "../components/states";
@@ -43,7 +45,11 @@ export function Pantry() {
       </p>
 
       <div className="mt-6 max-w-sm">
+        <label className="sr-only" htmlFor="pantry-ingredient">
+          Add an ingredient to your pantry
+        </label>
         <IngredientPicker
+          id="pantry-ingredient"
           placeholder="Add an ingredient…"
           excludeIds={pantry.map((p) => p.id)}
           onSelect={addIngredient}
@@ -62,23 +68,18 @@ export function Pantry() {
                 type="button"
                 onClick={() => removeIngredient(ing.id)}
                 aria-label={`Remove ${ing.name}`}
-                className="flex h-4 w-4 items-center justify-center rounded-full text-olive-dark/70 hover:bg-olive/25 hover:text-olive-dark"
+                className="focus-ring flex h-4 w-4 items-center justify-center rounded-full text-olive-dark/70 hover:bg-olive/25 hover:text-olive-dark"
               >
-                ×
+                <X aria-hidden="true" size={12} strokeWidth={2.5} />
               </button>
             </li>
           ))}
         </ul>
       )}
 
-      <button
-        type="button"
-        onClick={search}
-        disabled={pantry.length === 0 || loading}
-        className="mt-5 rounded-full bg-terracotta px-5 py-2.5 text-sm font-medium text-cream transition hover:bg-terracotta-dark disabled:cursor-not-allowed disabled:opacity-40"
-      >
+      <Button onClick={search} disabled={pantry.length === 0 || loading} className="mt-5">
         Find recipes
-      </button>
+      </Button>
 
       <div className="mt-8">
         {loading && <LoadingState label="Searching the pantry graph…" />}
@@ -86,7 +87,7 @@ export function Pantry() {
 
         {!loading && !error && matches === null && pantry.length === 0 && (
           <EmptyState
-            icon="🧺"
+            icon={ShoppingBasket}
             title="Your pantry is empty"
             description="Start adding ingredients above to see what you can cook."
           />
@@ -94,7 +95,7 @@ export function Pantry() {
 
         {!loading && !error && matches !== null && matches.length === 0 && (
           <EmptyState
-            icon="🤔"
+            icon={HelpCircle}
             title="Nothing matches yet"
             description="Add a few more staple ingredients — grains, alliums, or a fat/oil — and try again."
           />
@@ -108,14 +109,15 @@ export function Pantry() {
                 <div className="flex-1">
                   <Link
                     to={`/recipes/${m.recipe.id}`}
-                    className="font-display text-base font-medium text-ink hover:text-terracotta-dark"
+                    className="focus-ring rounded font-display text-base font-medium text-ink hover:text-terracotta-dark"
                   >
                     {m.recipe.name}
                   </Link>
                   <div className="text-xs text-muted">{formatCuisineName(m.recipe.cuisine)}</div>
                   {m.have_via_substitution.length === 0 ? (
-                    <p className="mt-1.5 text-xs font-medium text-olive-dark">
-                      You have everything you need ✓
+                    <p className="mt-1.5 inline-flex items-center gap-1 text-xs font-medium text-olive-dark">
+                      <CheckCircle2 aria-hidden="true" size={13} strokeWidth={2} />
+                      You have everything you need
                     </p>
                   ) : (
                     <ul className="mt-1.5 space-y-0.5">

@@ -1,3 +1,4 @@
+import { ChefHat } from "lucide-react";
 import { getCuisineTheme } from "../lib/cuisineTheme";
 
 interface Props {
@@ -12,7 +13,7 @@ export function RecipePlaceholderArt({ cuisine, className = "" }: Props) {
       className={`flex items-center justify-center bg-gradient-to-br ${theme.gradient} ${className}`}
       aria-hidden="true"
     >
-      <span className="text-4xl drop-shadow-sm">{theme.emoji}</span>
+      <ChefHat className="text-cream/90 drop-shadow-sm" size={32} strokeWidth={1.5} />
     </div>
   );
 }

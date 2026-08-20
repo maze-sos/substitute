@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import { ArrowLeft, ArrowRight, Ban, FlaskConical, UtensilsCrossed } from "lucide-react";
 import { api, ApiError } from "../api/client";
 import { useApi } from "../lib/useApi";
 import { LoadingState, ErrorBanner, EmptyState } from "../components/states";
@@ -32,8 +33,12 @@ export function IngredientDetail() {
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
-      <Link to="/" className="text-sm font-medium text-terracotta-dark hover:underline">
-        ← Back to recipes
+      <Link
+        to="/"
+        className="focus-ring inline-flex items-center gap-1.5 rounded-full text-sm font-medium text-terracotta-dark hover:underline"
+      >
+        <ArrowLeft aria-hidden="true" size={16} strokeWidth={2} />
+        Back to recipes
       </Link>
 
       <div className="mt-4">
@@ -44,14 +49,14 @@ export function IngredientDetail() {
       <section className="mt-8">
         <h2 className="font-display text-lg font-medium text-ink">Used in</h2>
         {ingredient.used_in.length === 0 ? (
-          <EmptyState icon="🍽️" title="Not used in any recipe yet" />
+          <EmptyState icon={UtensilsCrossed} title="Not used in any recipe yet" />
         ) : (
           <ul className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
             {ingredient.used_in.map((r) => (
               <li key={r.id}>
                 <Link
                   to={`/recipes/${r.id}`}
-                  className="block rounded-xl border border-sand bg-white/60 px-4 py-2.5 text-sm text-ink-soft transition hover:border-terracotta hover:text-terracotta-dark"
+                  className="focus-ring block rounded-xl border border-sand bg-white/60 px-4 py-2.5 text-sm text-ink-soft transition hover:border-terracotta hover:text-terracotta-dark"
                 >
                   {r.name}
                 </Link>
@@ -67,7 +72,7 @@ export function IngredientDetail() {
           Ranked by the number of shared flavor compounds, from published flavor-pairing research.
         </p>
         {pairings && pairings.length === 0 && (
-          <EmptyState icon="🧪" title="No flavor-compound data for this ingredient yet" />
+          <EmptyState icon={FlaskConical} title="No flavor-compound data for this ingredient yet" />
         )}
         {pairings && pairings.length > 0 && (
           <ul className="mt-3 flex flex-wrap gap-2">
@@ -75,7 +80,7 @@ export function IngredientDetail() {
               <li key={p.ingredient.id}>
                 <Link
                   to={`/ingredients/${p.ingredient.id}`}
-                  className="inline-flex items-center gap-1.5 rounded-full border border-sand bg-white/60 px-3 py-1.5 text-sm text-ink-soft transition hover:border-terracotta hover:text-terracotta-dark"
+                  className="focus-ring inline-flex items-center gap-1.5 rounded-full border border-sand bg-white/60 px-3 py-1.5 text-sm text-ink-soft transition hover:border-terracotta hover:text-terracotta-dark"
                 >
                   {p.ingredient.name}
                   <span className="text-xs text-muted">×{p.shared_compounds}</span>
@@ -119,7 +124,11 @@ function SubstitutionPathFinder({ fromId, fromName }: { fromId: string; fromName
         See how {fromName} connects to another ingredient through a chain of substitutions.
       </p>
       <div className="mt-3 max-w-sm">
+        <label className="sr-only" htmlFor="substitution-target">
+          Search for an ingredient to find a substitution path to
+        </label>
         <IngredientPicker
+          id="substitution-target"
           placeholder="Search for an ingredient…"
           excludeIds={[fromId]}
           onSelect={findPath}
@@ -130,7 +139,7 @@ function SubstitutionPathFinder({ fromId, fromName }: { fromId: string; fromName
       {!loading && error && <ErrorBanner message={error} />}
       {!loading && !error && target && path && !path.found && (
         <EmptyState
-          icon="🚫"
+          icon={Ban}
           title={`No substitution path found to ${target.name}`}
           description="These ingredients aren't connected within 6 substitution hops."
         />
@@ -140,8 +149,9 @@ function SubstitutionPathFinder({ fromId, fromName }: { fromId: string; fromName
           <li className="rounded-full bg-terracotta px-3 py-1.5 font-medium text-cream">{fromName}</li>
           {path.steps.map((step, i) => (
             <li key={i} className="flex items-center gap-2">
-              <span className="text-muted" aria-hidden="true">
-                → {step.ratio ? `(${step.ratio})` : ""} →
+              <span className="flex items-center gap-1 text-muted" aria-hidden="true">
+                <ArrowRight size={14} strokeWidth={2} />
+                {step.ratio && <span className="text-xs">{step.ratio}</span>}
               </span>
               <span className="rounded-full bg-olive/15 px-3 py-1.5 font-medium text-olive-dark">
                 {step.to_name}

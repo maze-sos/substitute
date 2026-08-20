@@ -1,8 +1,12 @@
 import { useCallback, useEffect, useState } from "react";
+import { SearchX } from "lucide-react";
 import { api } from "../api/client";
 import { useApi } from "../lib/useApi";
 import { RecipeCard } from "../components/RecipeCard";
-import { LoadingState, EmptyState, ErrorBanner } from "../components/states";
+import { RecipeGridSkeleton } from "../components/RecipeGridSkeleton";
+import { EmptyState, ErrorBanner } from "../components/states";
+import { SearchInput } from "../components/SearchInput";
+import { Select } from "../components/Select";
 import type { RecipeBrief } from "../types";
 
 export function Home() {
@@ -35,17 +39,24 @@ export function Home() {
       </div>
 
       <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-        <input
-          type="search"
+        <label className="sr-only" htmlFor="recipe-search">
+          Search recipes
+        </label>
+        <SearchInput
+          id="recipe-search"
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
           placeholder="Search recipes…"
-          className="w-full rounded-full border border-sand-dark bg-white/70 px-4 py-2.5 text-sm text-ink placeholder:text-muted focus:border-terracotta focus:outline-none sm:max-w-xs"
+          className="sm:max-w-xs"
         />
-        <select
+        <label className="sr-only" htmlFor="cuisine-filter">
+          Filter by cuisine
+        </label>
+        <Select
+          id="cuisine-filter"
           value={cuisine}
           onChange={(e) => setCuisine(e.target.value)}
-          className="w-full rounded-full border border-sand-dark bg-white/70 px-4 py-2.5 text-sm text-ink focus:border-terracotta focus:outline-none sm:w-auto"
+          className="sm:w-56"
         >
           <option value="">All cuisines</option>
           {cuisines?.map((c) => (
@@ -53,14 +64,14 @@ export function Home() {
               {c.name}
             </option>
           ))}
-        </select>
+        </Select>
       </div>
 
-      {loading && <LoadingState label="Finding recipes…" />}
+      {loading && <RecipeGridSkeleton />}
       {!loading && error && <ErrorBanner message={error} onRetry={refetch} />}
       {!loading && !error && recipes && recipes.length === 0 && (
         <EmptyState
-          icon="🔍"
+          icon={SearchX}
           title="No recipes match"
           description="Try a different search term or clear the cuisine filter."
         />

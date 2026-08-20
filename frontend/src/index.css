@@ -10,7 +10,7 @@
   --color-sand-dark: #ddceb0;
   --color-ink: #2b2420;
   --color-ink-soft: #52463c;
-  --color-muted: #8a7d6d;
+  --color-muted: #6b5d4e;
   --color-terracotta: #c1583a;
   --color-terracotta-dark: #a3462c;
   --color-olive: #6b7a4f;
@@ -30,4 +30,35 @@ h1, h2, h3, .font-display {
 ::selection {
   background-color: var(--color-terracotta);
   color: var(--color-cream);
+}
+
+/* Every interactive element gets a visible keyboard-focus ring instead of
+   the browser default outline being stripped with nothing to replace it. */
+@utility focus-ring {
+  outline: none;
+
+  &:focus-visible {
+    outline: 2px solid var(--color-terracotta);
+    outline-offset: 2px;
+  }
+}
+
+@utility form-control {
+  height: 2.75rem;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: var(--color-sand-dark);
+  background-color: color-mix(in srgb, white 70%, transparent);
+  padding-inline: 1rem;
+  font-size: 0.875rem;
+  color: var(--color-ink);
+  transition: border-color 150ms ease;
+
+  &::placeholder {
+    color: var(--color-muted);
+  }
+
+  &:hover {
+    border-color: var(--color-terracotta);
+  }
 }
