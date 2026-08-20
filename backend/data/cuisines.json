@@ -1,0 +1,12 @@
+[
+  {"id": "italian", "name": "Italian"},
+  {"id": "mexican", "name": "Mexican"},
+  {"id": "indian", "name": "Indian"},
+  {"id": "chinese", "name": "Chinese"},
+  {"id": "thai", "name": "Thai"},
+  {"id": "japanese", "name": "Japanese"},
+  {"id": "mediterranean", "name": "Mediterranean"},
+  {"id": "american", "name": "American"},
+  {"id": "french", "name": "French"},
+  {"id": "middle-eastern", "name": "Middle Eastern"}
+]

@@ -1,0 +1,959 @@
+[
+  {
+    "id": "spaghetti-aglio-e-olio",
+    "name": "Spaghetti Aglio e Olio",
+    "cuisine": "italian",
+    "prep_minutes": 20,
+    "servings": 4,
+    "tags": ["vegetarian", "quick"],
+    "instructions": "Cook spaghetti in well-salted water until al dente. Meanwhile, gently sizzle thinly sliced garlic and red pepper flakes in olive oil over low heat until golden and fragrant, taking care not to burn it. Toss the drained pasta into the pan with a splash of starchy pasta water, then finish with chopped parsley and a shower of parmesan.",
+    "ingredients": [
+      {"ingredient_id": "spaghetti", "quantity": "400", "unit": "g", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "6", "unit": "cloves", "optional": false},
+      {"ingredient_id": "olive-oil", "quantity": "1/2", "unit": "cup", "optional": false},
+      {"ingredient_id": "red-pepper-flakes", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "parsley", "quantity": "1/4", "unit": "cup", "optional": false},
+      {"ingredient_id": "parmesan", "quantity": "1/2", "unit": "cup", "optional": true},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "tomato-basil-pasta",
+    "name": "Tomato Basil Pasta",
+    "cuisine": "italian",
+    "prep_minutes": 25,
+    "servings": 4,
+    "tags": ["vegetarian", "quick"],
+    "instructions": "Simmer chopped tomatoes with garlic in olive oil until they break down into a loose sauce. Toss with cooked pasta, torn basil, and torn mozzarella so it melts slightly from the residual heat. Finish with parmesan and black pepper.",
+    "ingredients": [
+      {"ingredient_id": "pasta", "quantity": "400", "unit": "g", "optional": false},
+      {"ingredient_id": "tomato", "quantity": "6", "unit": "medium", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "4", "unit": "cloves", "optional": false},
+      {"ingredient_id": "basil", "quantity": "1/2", "unit": "cup", "optional": false},
+      {"ingredient_id": "olive-oil", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "mozzarella", "quantity": "150", "unit": "g", "optional": true},
+      {"ingredient_id": "parmesan", "quantity": "1/4", "unit": "cup", "optional": true},
+      {"ingredient_id": "black-pepper", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "chicken-piccata",
+    "name": "Chicken Piccata",
+    "cuisine": "italian",
+    "prep_minutes": 30,
+    "servings": 4,
+    "tags": ["quick"],
+    "instructions": "Dredge thin chicken cutlets in flour and pan-sear in butter and olive oil until golden. Remove the chicken, then deglaze the pan with lemon juice and a splash of water, whisking in cold butter for a glossy sauce. Return the chicken to the pan, spoon over the sauce, and finish with parsley.",
+    "ingredients": [
+      {"ingredient_id": "chicken-breast", "quantity": "4", "unit": "cutlets", "optional": false},
+      {"ingredient_id": "all-purpose-flour", "quantity": "1/2", "unit": "cup", "optional": false},
+      {"ingredient_id": "butter", "quantity": "4", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "olive-oil", "quantity": "2", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "lemon", "quantity": "2", "unit": "whole", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "2", "unit": "cloves", "optional": true},
+      {"ingredient_id": "parsley", "quantity": "2", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false},
+      {"ingredient_id": "black-pepper", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "mushroom-risotto",
+    "name": "Mushroom Risotto",
+    "cuisine": "italian",
+    "prep_minutes": 45,
+    "servings": 4,
+    "tags": ["vegetarian", "comfort-food"],
+    "instructions": "Sauté mushrooms and onion in butter until browned, then set aside. Toast rice in the same pan, and add warm stock a ladle at a time, stirring constantly until each addition is absorbed. When the rice is creamy and just tender, fold the mushrooms back in with parmesan and a final knob of butter.",
+    "ingredients": [
+      {"ingredient_id": "rice", "quantity": "1.5", "unit": "cups", "optional": false},
+      {"ingredient_id": "mushroom", "quantity": "300", "unit": "g", "optional": false},
+      {"ingredient_id": "onion", "quantity": "1", "unit": "medium", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "2", "unit": "cloves", "optional": false},
+      {"ingredient_id": "butter", "quantity": "4", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "parmesan", "quantity": "3/4", "unit": "cup", "optional": false},
+      {"ingredient_id": "parsley", "quantity": "2", "unit": "tbsp", "optional": true},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "caprese-salad",
+    "name": "Caprese Salad",
+    "cuisine": "italian",
+    "prep_minutes": 10,
+    "servings": 4,
+    "tags": ["vegetarian", "quick", "gluten-free"],
+    "instructions": "Layer sliced tomato and mozzarella on a plate, tucking whole basil leaves between the slices. Drizzle generously with olive oil and balsamic vinegar, then finish with flaky salt and cracked black pepper.",
+    "ingredients": [
+      {"ingredient_id": "tomato", "quantity": "4", "unit": "large", "optional": false},
+      {"ingredient_id": "mozzarella", "quantity": "250", "unit": "g", "optional": false},
+      {"ingredient_id": "basil", "quantity": "1", "unit": "cup", "optional": false},
+      {"ingredient_id": "olive-oil", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "balsamic-vinegar", "quantity": "1", "unit": "tbsp", "optional": true},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false},
+      {"ingredient_id": "black-pepper", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+
+  {
+    "id": "chicken-tacos",
+    "name": "Chicken Tacos",
+    "cuisine": "mexican",
+    "prep_minutes": 25,
+    "servings": 4,
+    "tags": ["quick", "gluten-free"],
+    "instructions": "Toss sliced chicken thigh with cumin, paprika, and salt, then sear until charred at the edges and cooked through. Warm the tortillas, pile in the chicken, and top with diced onion, jalapeño, cilantro, and a squeeze of lime.",
+    "ingredients": [
+      {"ingredient_id": "chicken-thigh", "quantity": "600", "unit": "g", "optional": false},
+      {"ingredient_id": "tortilla", "quantity": "8", "unit": "small", "optional": false},
+      {"ingredient_id": "lime", "quantity": "2", "unit": "whole", "optional": false},
+      {"ingredient_id": "cilantro", "quantity": "1/4", "unit": "cup", "optional": false},
+      {"ingredient_id": "onion", "quantity": "1", "unit": "small", "optional": false},
+      {"ingredient_id": "jalapeno", "quantity": "1", "unit": "whole", "optional": true},
+      {"ingredient_id": "cumin", "quantity": "2", "unit": "tsp", "optional": false},
+      {"ingredient_id": "paprika", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "black-bean-tacos",
+    "name": "Black Bean Tacos",
+    "cuisine": "mexican",
+    "prep_minutes": 20,
+    "servings": 4,
+    "tags": ["vegetarian", "vegan", "quick"],
+    "instructions": "Warm black beans with cumin and a splash of water until saucy, mashing some for texture. Spoon into tortillas with avocado, onion, and cilantro, then finish with a squeeze of lime.",
+    "ingredients": [
+      {"ingredient_id": "black-beans", "quantity": "2", "unit": "cans", "optional": false},
+      {"ingredient_id": "tortilla", "quantity": "8", "unit": "small", "optional": false},
+      {"ingredient_id": "avocado", "quantity": "2", "unit": "whole", "optional": false},
+      {"ingredient_id": "lime", "quantity": "2", "unit": "whole", "optional": false},
+      {"ingredient_id": "cilantro", "quantity": "1/4", "unit": "cup", "optional": false},
+      {"ingredient_id": "onion", "quantity": "1", "unit": "small", "optional": false},
+      {"ingredient_id": "cumin", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "cheddar", "quantity": "1/2", "unit": "cup", "optional": true},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "guacamole",
+    "name": "Guacamole",
+    "cuisine": "mexican",
+    "prep_minutes": 10,
+    "servings": 4,
+    "tags": ["vegetarian", "vegan", "quick", "gluten-free"],
+    "instructions": "Mash ripe avocado to your preferred texture, then fold in finely diced onion, tomato, jalapeño, and cilantro. Brighten with lime juice and season with salt to taste.",
+    "ingredients": [
+      {"ingredient_id": "avocado", "quantity": "4", "unit": "whole", "optional": false},
+      {"ingredient_id": "lime", "quantity": "1", "unit": "whole", "optional": false},
+      {"ingredient_id": "onion", "quantity": "1/2", "unit": "small", "optional": false},
+      {"ingredient_id": "cilantro", "quantity": "1/4", "unit": "cup", "optional": false},
+      {"ingredient_id": "jalapeno", "quantity": "1", "unit": "whole", "optional": true},
+      {"ingredient_id": "tomato", "quantity": "1", "unit": "small", "optional": true},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "beef-enchiladas",
+    "name": "Beef Enchiladas",
+    "cuisine": "mexican",
+    "prep_minutes": 45,
+    "servings": 5,
+    "tags": ["comfort-food"],
+    "instructions": "Brown ground beef with onion, cumin, and paprika, then stir in tomato paste and a little water to loosen. Roll the filling into tortillas, arrange in a baking dish, blanket with cheddar, and bake until bubbling. Serve with a dollop of sour cream.",
+    "ingredients": [
+      {"ingredient_id": "ground-beef", "quantity": "500", "unit": "g", "optional": false},
+      {"ingredient_id": "tortilla", "quantity": "10", "unit": "small", "optional": false},
+      {"ingredient_id": "cheddar", "quantity": "1.5", "unit": "cups", "optional": false},
+      {"ingredient_id": "onion", "quantity": "1", "unit": "medium", "optional": false},
+      {"ingredient_id": "tomato-paste", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "cumin", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "paprika", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "sour-cream", "quantity": "1/2", "unit": "cup", "optional": true},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "elote-corn-salad",
+    "name": "Elote-Style Corn Salad",
+    "cuisine": "mexican",
+    "prep_minutes": 20,
+    "servings": 4,
+    "tags": ["vegetarian", "quick", "gluten-free", "spicy"],
+    "instructions": "Char corn kernels in a hot dry pan until spotted. Toss with mayonnaise, crumbled cheddar, lime juice, and cayenne, then finish with a generous handful of cilantro.",
+    "ingredients": [
+      {"ingredient_id": "corn", "quantity": "4", "unit": "ears", "optional": false},
+      {"ingredient_id": "mayonnaise", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "cheddar", "quantity": "1/2", "unit": "cup", "optional": false},
+      {"ingredient_id": "lime", "quantity": "1", "unit": "whole", "optional": false},
+      {"ingredient_id": "cayenne", "quantity": "1/2", "unit": "tsp", "optional": false},
+      {"ingredient_id": "cilantro", "quantity": "2", "unit": "tbsp", "optional": true},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+
+  {
+    "id": "butter-chicken",
+    "name": "Butter Chicken",
+    "cuisine": "indian",
+    "prep_minutes": 50,
+    "servings": 4,
+    "tags": ["comfort-food", "gluten-free"],
+    "instructions": "Simmer chicken thigh in a sauce of tomato paste, butter, garlic, and ginger until the fat separates and turns glossy. Season with garam masala, cumin, turmeric, and cayenne, then stir in cream at the end and simmer gently until thickened.",
+    "ingredients": [
+      {"ingredient_id": "chicken-thigh", "quantity": "700", "unit": "g", "optional": false},
+      {"ingredient_id": "butter", "quantity": "4", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "tomato-paste", "quantity": "4", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "heavy-cream", "quantity": "1/2", "unit": "cup", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "4", "unit": "cloves", "optional": false},
+      {"ingredient_id": "ginger", "quantity": "1", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "garam-masala", "quantity": "2", "unit": "tsp", "optional": false},
+      {"ingredient_id": "cumin", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "turmeric", "quantity": "1/2", "unit": "tsp", "optional": false},
+      {"ingredient_id": "cayenne", "quantity": "1/2", "unit": "tsp", "optional": true},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "chana-masala",
+    "name": "Chana Masala",
+    "cuisine": "indian",
+    "prep_minutes": 35,
+    "servings": 4,
+    "tags": ["vegetarian", "vegan", "gluten-free"],
+    "instructions": "Sauté onion, garlic, and ginger until soft, then bloom cumin, coriander, and turmeric in the pan. Add tomato and chickpeas, simmer until the sauce thickens, and finish with garam masala and cilantro.",
+    "ingredients": [
+      {"ingredient_id": "chickpeas", "quantity": "2", "unit": "cans", "optional": false},
+      {"ingredient_id": "onion", "quantity": "1", "unit": "medium", "optional": false},
+      {"ingredient_id": "tomato", "quantity": "3", "unit": "medium", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "3", "unit": "cloves", "optional": false},
+      {"ingredient_id": "ginger", "quantity": "1", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "cumin", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "coriander", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "turmeric", "quantity": "1/2", "unit": "tsp", "optional": false},
+      {"ingredient_id": "garam-masala", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "cilantro", "quantity": "2", "unit": "tbsp", "optional": true},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "palak-paneer",
+    "name": "Palak Paneer",
+    "cuisine": "indian",
+    "prep_minutes": 35,
+    "servings": 4,
+    "tags": ["vegetarian", "gluten-free"],
+    "instructions": "Blanch and blend spinach into a smooth purée. Sauté onion, garlic, and ginger, bloom the spices, then stir in the spinach purée and pan-seared paneer cubes. Simmer briefly and finish with a swirl of cream.",
+    "ingredients": [
+      {"ingredient_id": "spinach", "quantity": "500", "unit": "g", "optional": false},
+      {"ingredient_id": "paneer", "quantity": "300", "unit": "g", "optional": false},
+      {"ingredient_id": "onion", "quantity": "1", "unit": "medium", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "3", "unit": "cloves", "optional": false},
+      {"ingredient_id": "ginger", "quantity": "1", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "cumin", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "garam-masala", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "heavy-cream", "quantity": "2", "unit": "tbsp", "optional": true},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "vegetable-biryani",
+    "name": "Vegetable Biryani",
+    "cuisine": "indian",
+    "prep_minutes": 55,
+    "servings": 5,
+    "tags": ["vegetarian", "gluten-free"],
+    "instructions": "Parboil basmati rice with whole cardamom until nearly done. Separately cook carrot, peas, and onion with garlic, ginger, and garam masala. Layer the rice and vegetables, scatter over a pinch of saffron soaked in warm water, and steam covered until fully tender.",
+    "ingredients": [
+      {"ingredient_id": "basmati-rice", "quantity": "2", "unit": "cups", "optional": false},
+      {"ingredient_id": "carrot", "quantity": "2", "unit": "medium", "optional": false},
+      {"ingredient_id": "peas", "quantity": "1", "unit": "cup", "optional": false},
+      {"ingredient_id": "onion", "quantity": "1", "unit": "large", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "3", "unit": "cloves", "optional": false},
+      {"ingredient_id": "ginger", "quantity": "1", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "garam-masala", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "saffron", "quantity": "1", "unit": "pinch", "optional": true},
+      {"ingredient_id": "cardamom", "quantity": "4", "unit": "pods", "optional": false},
+      {"ingredient_id": "cashews", "quantity": "1/4", "unit": "cup", "optional": true},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "lentil-dal",
+    "name": "Lentil Dal",
+    "cuisine": "indian",
+    "prep_minutes": 35,
+    "servings": 4,
+    "tags": ["vegetarian", "vegan", "gluten-free", "comfort-food"],
+    "instructions": "Simmer lentils until soft and starting to break down. In a separate small pan, temper cumin and garlic in ghee until fragrant and pour it sizzling over the finished dal. Stir in turmeric, sautéed onion and tomato, and finish with cilantro.",
+    "ingredients": [
+      {"ingredient_id": "lentils", "quantity": "1.5", "unit": "cups", "optional": false},
+      {"ingredient_id": "onion", "quantity": "1", "unit": "medium", "optional": false},
+      {"ingredient_id": "tomato", "quantity": "1", "unit": "medium", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "3", "unit": "cloves", "optional": false},
+      {"ingredient_id": "ginger", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "turmeric", "quantity": "1/2", "unit": "tsp", "optional": false},
+      {"ingredient_id": "cumin", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "ghee", "quantity": "2", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "cilantro", "quantity": "2", "unit": "tbsp", "optional": true},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+
+  {
+    "id": "kung-pao-chicken",
+    "name": "Kung Pao Chicken",
+    "cuisine": "chinese",
+    "prep_minutes": 30,
+    "servings": 4,
+    "tags": ["spicy", "quick"],
+    "instructions": "Velvet diced chicken in a little cornstarch, then stir-fry hard and fast until just cooked. Add garlic, ginger, and dried chilies, then toss with a soy-vinegar sauce, bell pepper, and roasted peanuts until glossy.",
+    "ingredients": [
+      {"ingredient_id": "chicken-breast", "quantity": "500", "unit": "g", "optional": false},
+      {"ingredient_id": "peanuts", "quantity": "1/2", "unit": "cup", "optional": false},
+      {"ingredient_id": "bell-pepper", "quantity": "1", "unit": "whole", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "3", "unit": "cloves", "optional": false},
+      {"ingredient_id": "ginger", "quantity": "1", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "soy-sauce", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "rice-vinegar", "quantity": "1", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "cornstarch", "quantity": "1", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "red-pepper-flakes", "quantity": "1", "unit": "tsp", "optional": false}
+    ]
+  },
+  {
+    "id": "beef-and-broccoli",
+    "name": "Beef and Broccoli",
+    "cuisine": "chinese",
+    "prep_minutes": 30,
+    "servings": 4,
+    "tags": ["quick", "dairy-free"],
+    "instructions": "Sear thinly sliced beef chuck in a screaming hot wok, then set aside. Stir-fry broccoli with garlic and ginger until bright green, return the beef, and toss everything with a soy-oyster sauce thickened lightly with cornstarch.",
+    "ingredients": [
+      {"ingredient_id": "beef-chuck", "quantity": "500", "unit": "g", "optional": false},
+      {"ingredient_id": "broccoli", "quantity": "400", "unit": "g", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "3", "unit": "cloves", "optional": false},
+      {"ingredient_id": "ginger", "quantity": "1", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "soy-sauce", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "oyster-sauce", "quantity": "2", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "cornstarch", "quantity": "1", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "sesame-oil", "quantity": "1", "unit": "tsp", "optional": true}
+    ]
+  },
+  {
+    "id": "vegetable-fried-rice",
+    "name": "Vegetable Fried Rice",
+    "cuisine": "chinese",
+    "prep_minutes": 20,
+    "servings": 4,
+    "tags": ["vegetarian", "quick", "dairy-free"],
+    "instructions": "Scramble eggs in a hot wok and set aside. Stir-fry day-old rice with peas, carrot, and garlic until heated through, fold the eggs back in, and finish with soy sauce, scallion, and a drizzle of sesame oil.",
+    "ingredients": [
+      {"ingredient_id": "rice", "quantity": "3", "unit": "cups", "optional": false},
+      {"ingredient_id": "eggs", "quantity": "3", "unit": "whole", "optional": false},
+      {"ingredient_id": "peas", "quantity": "1/2", "unit": "cup", "optional": false},
+      {"ingredient_id": "carrot", "quantity": "1", "unit": "medium", "optional": false},
+      {"ingredient_id": "scallion", "quantity": "3", "unit": "stalks", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "2", "unit": "cloves", "optional": false},
+      {"ingredient_id": "soy-sauce", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "sesame-oil", "quantity": "1", "unit": "tsp", "optional": true}
+    ]
+  },
+  {
+    "id": "mapo-tofu",
+    "name": "Mapo Tofu",
+    "cuisine": "chinese",
+    "prep_minutes": 25,
+    "servings": 4,
+    "tags": ["spicy", "quick"],
+    "instructions": "Brown ground beef with garlic and ginger, stir in miso paste and chili for a savory, spicy base, then simmer soft tofu cubes gently in the sauce so they stay intact. Finish with scallion and a drizzle of sesame oil.",
+    "ingredients": [
+      {"ingredient_id": "tofu", "quantity": "400", "unit": "g", "optional": false},
+      {"ingredient_id": "ground-beef", "quantity": "200", "unit": "g", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "3", "unit": "cloves", "optional": false},
+      {"ingredient_id": "ginger", "quantity": "1", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "scallion", "quantity": "2", "unit": "stalks", "optional": false},
+      {"ingredient_id": "soy-sauce", "quantity": "2", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "miso-paste", "quantity": "1", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "chili-pepper", "quantity": "1", "unit": "whole", "optional": true},
+      {"ingredient_id": "sesame-oil", "quantity": "1", "unit": "tsp", "optional": true}
+    ]
+  },
+  {
+    "id": "hot-and-sour-soup",
+    "name": "Hot and Sour Soup",
+    "cuisine": "chinese",
+    "prep_minutes": 25,
+    "servings": 4,
+    "tags": ["quick", "dairy-free"],
+    "instructions": "Simmer mushroom and tofu in stock, then season boldly with rice vinegar, soy sauce, and black pepper for the signature hot-sour balance. Thicken lightly with a cornstarch slurry and swirl in beaten egg at the very end so it forms ribbons.",
+    "ingredients": [
+      {"ingredient_id": "mushroom", "quantity": "200", "unit": "g", "optional": false},
+      {"ingredient_id": "tofu", "quantity": "200", "unit": "g", "optional": false},
+      {"ingredient_id": "eggs", "quantity": "2", "unit": "whole", "optional": false},
+      {"ingredient_id": "rice-vinegar", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "soy-sauce", "quantity": "2", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "black-pepper", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "cornstarch", "quantity": "2", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "scallion", "quantity": "2", "unit": "stalks", "optional": true}
+    ]
+  },
+
+  {
+    "id": "pad-thai",
+    "name": "Pad Thai",
+    "cuisine": "thai",
+    "prep_minutes": 30,
+    "servings": 4,
+    "tags": ["dairy-free"],
+    "instructions": "Soak rice noodles until pliable. Stir-fry shrimp and garlic, push to one side, scramble in egg, then add the noodles with a tamarind-fish sauce mixture. Toss everything together and finish with crushed peanuts, scallion, and a wedge of lime.",
+    "ingredients": [
+      {"ingredient_id": "rice-noodles", "quantity": "300", "unit": "g", "optional": false},
+      {"ingredient_id": "shrimp", "quantity": "300", "unit": "g", "optional": false},
+      {"ingredient_id": "eggs", "quantity": "2", "unit": "whole", "optional": false},
+      {"ingredient_id": "peanuts", "quantity": "1/3", "unit": "cup", "optional": false},
+      {"ingredient_id": "scallion", "quantity": "2", "unit": "stalks", "optional": false},
+      {"ingredient_id": "lime", "quantity": "2", "unit": "whole", "optional": false},
+      {"ingredient_id": "fish-sauce", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "tamarind", "quantity": "2", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "2", "unit": "cloves", "optional": false}
+    ]
+  },
+  {
+    "id": "green-curry-chicken",
+    "name": "Green Curry Chicken",
+    "cuisine": "thai",
+    "prep_minutes": 30,
+    "servings": 4,
+    "tags": ["dairy-free", "gluten-free", "spicy"],
+    "instructions": "Fry green curry paste in a spoonful of thick coconut milk until fragrant and the oil separates. Add chicken thigh and the rest of the coconut milk, simmer until cooked through, then stir in bell pepper and basil just before serving with a squeeze of lime.",
+    "ingredients": [
+      {"ingredient_id": "chicken-thigh", "quantity": "600", "unit": "g", "optional": false},
+      {"ingredient_id": "curry-paste", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "coconut-milk", "quantity": "2", "unit": "cans", "optional": false},
+      {"ingredient_id": "bell-pepper", "quantity": "1", "unit": "whole", "optional": false},
+      {"ingredient_id": "basil", "quantity": "1/2", "unit": "cup", "optional": false},
+      {"ingredient_id": "fish-sauce", "quantity": "2", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "lime", "quantity": "1", "unit": "whole", "optional": false}
+    ]
+  },
+  {
+    "id": "tom-yum-soup",
+    "name": "Tom Yum Soup",
+    "cuisine": "thai",
+    "prep_minutes": 25,
+    "servings": 4,
+    "tags": ["dairy-free", "gluten-free", "spicy", "quick"],
+    "instructions": "Simmer ginger and lime in stock to build an aromatic, sour-spicy base. Add mushroom and shrimp and cook just until the shrimp turn pink, then season boldly with fish sauce and chili. Finish with cilantro and extra lime.",
+    "ingredients": [
+      {"ingredient_id": "shrimp", "quantity": "400", "unit": "g", "optional": false},
+      {"ingredient_id": "mushroom", "quantity": "200", "unit": "g", "optional": false},
+      {"ingredient_id": "lime", "quantity": "2", "unit": "whole", "optional": false},
+      {"ingredient_id": "ginger", "quantity": "2", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "fish-sauce", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "chili-pepper", "quantity": "2", "unit": "whole", "optional": false},
+      {"ingredient_id": "cilantro", "quantity": "2", "unit": "tbsp", "optional": true}
+    ]
+  },
+  {
+    "id": "mango-sticky-rice",
+    "name": "Mango Sticky Rice",
+    "cuisine": "thai",
+    "prep_minutes": 40,
+    "servings": 4,
+    "tags": ["vegetarian", "vegan", "dairy-free", "gluten-free"],
+    "instructions": "Steam jasmine rice until tender, then fold in warmed coconut milk and sugar and let it soak in off the heat. Serve mounded next to sliced ripe mango, spooning over any remaining sweetened coconut milk.",
+    "ingredients": [
+      {"ingredient_id": "jasmine-rice", "quantity": "1.5", "unit": "cups", "optional": false},
+      {"ingredient_id": "coconut-milk", "quantity": "1", "unit": "can", "optional": false},
+      {"ingredient_id": "mango", "quantity": "2", "unit": "whole", "optional": false},
+      {"ingredient_id": "sugar", "quantity": "1/4", "unit": "cup", "optional": false},
+      {"ingredient_id": "salt", "quantity": "1", "unit": "pinch", "optional": false}
+    ]
+  },
+  {
+    "id": "thai-basil-chicken",
+    "name": "Thai Basil Chicken",
+    "cuisine": "thai",
+    "prep_minutes": 20,
+    "servings": 4,
+    "tags": ["dairy-free", "quick", "spicy"],
+    "instructions": "Stir-fry minced garlic and chili in hot oil until fragrant, then add ground chicken and cook until browned. Season with fish sauce and soy sauce, fold in a generous handful of basil until wilted, and serve over rice topped with a fried egg.",
+    "ingredients": [
+      {"ingredient_id": "chicken-breast", "quantity": "500", "unit": "g", "optional": false},
+      {"ingredient_id": "basil", "quantity": "1", "unit": "cup", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "4", "unit": "cloves", "optional": false},
+      {"ingredient_id": "chili-pepper", "quantity": "2", "unit": "whole", "optional": false},
+      {"ingredient_id": "fish-sauce", "quantity": "2", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "soy-sauce", "quantity": "1", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "eggs", "quantity": "4", "unit": "whole", "optional": true}
+    ]
+  },
+
+  {
+    "id": "chicken-teriyaki",
+    "name": "Chicken Teriyaki",
+    "cuisine": "japanese",
+    "prep_minutes": 25,
+    "servings": 4,
+    "tags": ["dairy-free", "quick"],
+    "instructions": "Sear chicken thigh skin-side down until deeply golden. Simmer soy sauce, honey, garlic, and ginger into a glossy glaze, then return the chicken to the pan and reduce until thickly coated. Finish with a scatter of sesame seeds.",
+    "ingredients": [
+      {"ingredient_id": "chicken-thigh", "quantity": "600", "unit": "g", "optional": false},
+      {"ingredient_id": "soy-sauce", "quantity": "1/4", "unit": "cup", "optional": false},
+      {"ingredient_id": "honey", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "ginger", "quantity": "1", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "2", "unit": "cloves", "optional": false},
+      {"ingredient_id": "sesame-seeds", "quantity": "1", "unit": "tbsp", "optional": true}
+    ]
+  },
+  {
+    "id": "miso-soup",
+    "name": "Miso Soup",
+    "cuisine": "japanese",
+    "prep_minutes": 15,
+    "servings": 4,
+    "tags": ["vegetarian", "vegan", "dairy-free", "gluten-free", "quick"],
+    "instructions": "Warm stock gently without boiling, then whisk in miso paste until dissolved. Add cubed tofu and sliced mushroom, simmer briefly, and finish with sliced scallion.",
+    "ingredients": [
+      {"ingredient_id": "miso-paste", "quantity": "4", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "tofu", "quantity": "200", "unit": "g", "optional": false},
+      {"ingredient_id": "mushroom", "quantity": "100", "unit": "g", "optional": true},
+      {"ingredient_id": "scallion", "quantity": "2", "unit": "stalks", "optional": false}
+    ]
+  },
+  {
+    "id": "salmon-rice-bowl",
+    "name": "Salmon Rice Bowl",
+    "cuisine": "japanese",
+    "prep_minutes": 25,
+    "servings": 4,
+    "tags": ["dairy-free", "quick"],
+    "instructions": "Pan-sear salmon skin-side down until crisp, then flake into large pieces. Serve over warm rice with sliced avocado, scallion, and a drizzle of soy sauce, finishing with a scatter of sesame seeds.",
+    "ingredients": [
+      {"ingredient_id": "salmon", "quantity": "600", "unit": "g", "optional": false},
+      {"ingredient_id": "rice", "quantity": "3", "unit": "cups", "optional": false},
+      {"ingredient_id": "scallion", "quantity": "2", "unit": "stalks", "optional": false},
+      {"ingredient_id": "sesame-seeds", "quantity": "1", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "soy-sauce", "quantity": "2", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "avocado", "quantity": "1", "unit": "whole", "optional": true}
+    ]
+  },
+  {
+    "id": "yaki-udon",
+    "name": "Yaki Udon",
+    "cuisine": "japanese",
+    "prep_minutes": 20,
+    "servings": 4,
+    "tags": ["dairy-free", "quick"],
+    "instructions": "Stir-fry cabbage and carrot in a hot pan until just tender. Add cooked noodles and toss with soy sauce and a drizzle of sesame oil until everything is glossy and lightly charred at the edges. Top with scallion.",
+    "ingredients": [
+      {"ingredient_id": "egg-noodles", "quantity": "400", "unit": "g", "optional": false},
+      {"ingredient_id": "cabbage", "quantity": "2", "unit": "cups", "optional": false},
+      {"ingredient_id": "carrot", "quantity": "1", "unit": "medium", "optional": false},
+      {"ingredient_id": "scallion", "quantity": "2", "unit": "stalks", "optional": false},
+      {"ingredient_id": "soy-sauce", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "sesame-oil", "quantity": "1", "unit": "tsp", "optional": true}
+    ]
+  },
+  {
+    "id": "cucumber-sesame-salad",
+    "name": "Cucumber Sesame Salad",
+    "cuisine": "japanese",
+    "prep_minutes": 10,
+    "servings": 4,
+    "tags": ["vegetarian", "vegan", "dairy-free", "gluten-free", "quick"],
+    "instructions": "Lightly salt sliced cucumber and let it sit to draw out excess water, then pat dry. Toss with rice vinegar, a touch of sugar, sesame oil, and a generous scatter of sesame seeds.",
+    "ingredients": [
+      {"ingredient_id": "cucumber", "quantity": "3", "unit": "medium", "optional": false},
+      {"ingredient_id": "rice-vinegar", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "sesame-oil", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "sesame-seeds", "quantity": "1", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "sugar", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+
+  {
+    "id": "greek-salad",
+    "name": "Greek Salad",
+    "cuisine": "mediterranean",
+    "prep_minutes": 15,
+    "servings": 4,
+    "tags": ["vegetarian", "quick", "gluten-free"],
+    "instructions": "Toss chunks of tomato and cucumber with sliced onion and crumbled feta. Dress simply with olive oil, lemon juice, and oregano, letting the vegetables' own juices mingle with the dressing.",
+    "ingredients": [
+      {"ingredient_id": "tomato", "quantity": "4", "unit": "medium", "optional": false},
+      {"ingredient_id": "cucumber", "quantity": "2", "unit": "medium", "optional": false},
+      {"ingredient_id": "feta", "quantity": "200", "unit": "g", "optional": false},
+      {"ingredient_id": "onion", "quantity": "1/2", "unit": "small", "optional": false},
+      {"ingredient_id": "olive-oil", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "lemon", "quantity": "1", "unit": "whole", "optional": false},
+      {"ingredient_id": "oregano", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "hummus",
+    "name": "Hummus",
+    "cuisine": "mediterranean",
+    "prep_minutes": 15,
+    "servings": 6,
+    "tags": ["vegetarian", "vegan", "quick", "gluten-free", "dairy-free"],
+    "instructions": "Blend chickpeas with tahini, lemon juice, garlic, and cumin, adding water gradually until silky smooth. Taste and adjust salt and lemon, then finish with a drizzle of olive oil.",
+    "ingredients": [
+      {"ingredient_id": "chickpeas", "quantity": "2", "unit": "cans", "optional": false},
+      {"ingredient_id": "tahini", "quantity": "1/3", "unit": "cup", "optional": false},
+      {"ingredient_id": "lemon", "quantity": "1", "unit": "whole", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "2", "unit": "cloves", "optional": false},
+      {"ingredient_id": "olive-oil", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "cumin", "quantity": "1/2", "unit": "tsp", "optional": false},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "chicken-souvlaki",
+    "name": "Chicken Souvlaki",
+    "cuisine": "mediterranean",
+    "prep_minutes": 30,
+    "servings": 4,
+    "tags": ["gluten-free", "dairy-free"],
+    "instructions": "Marinate cubed chicken breast in lemon juice, olive oil, garlic, and oregano, then thread onto skewers and grill until charred and juicy. Serve with a cool yogurt sauce on the side.",
+    "ingredients": [
+      {"ingredient_id": "chicken-breast", "quantity": "600", "unit": "g", "optional": false},
+      {"ingredient_id": "lemon", "quantity": "2", "unit": "whole", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "3", "unit": "cloves", "optional": false},
+      {"ingredient_id": "oregano", "quantity": "2", "unit": "tsp", "optional": false},
+      {"ingredient_id": "olive-oil", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "yogurt", "quantity": "1/2", "unit": "cup", "optional": true},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "falafel",
+    "name": "Falafel",
+    "cuisine": "mediterranean",
+    "prep_minutes": 40,
+    "servings": 4,
+    "tags": ["vegetarian", "vegan", "dairy-free"],
+    "instructions": "Pulse soaked chickpeas with onion, garlic, cilantro, parsley, cumin, and coriander into a coarse, scoopable paste, binding with a little flour. Shape into patties and fry until deeply golden and crisp outside.",
+    "ingredients": [
+      {"ingredient_id": "chickpeas", "quantity": "2", "unit": "cups", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "3", "unit": "cloves", "optional": false},
+      {"ingredient_id": "onion", "quantity": "1/2", "unit": "small", "optional": false},
+      {"ingredient_id": "cilantro", "quantity": "1/4", "unit": "cup", "optional": false},
+      {"ingredient_id": "parsley", "quantity": "1/4", "unit": "cup", "optional": false},
+      {"ingredient_id": "cumin", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "coriander", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "all-purpose-flour", "quantity": "2", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "vegetable-oil", "quantity": "1", "unit": "cup", "optional": false},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "shakshuka",
+    "name": "Shakshuka",
+    "cuisine": "mediterranean",
+    "prep_minutes": 30,
+    "servings": 4,
+    "tags": ["vegetarian", "gluten-free"],
+    "instructions": "Simmer onion, bell pepper, and tomato with cumin and paprika until thick and jammy. Make small wells in the sauce, crack in eggs, and cook covered until the whites set but yolks stay runny. Finish with crumbled feta.",
+    "ingredients": [
+      {"ingredient_id": "eggs", "quantity": "6", "unit": "whole", "optional": false},
+      {"ingredient_id": "tomato", "quantity": "5", "unit": "medium", "optional": false},
+      {"ingredient_id": "bell-pepper", "quantity": "1", "unit": "whole", "optional": false},
+      {"ingredient_id": "onion", "quantity": "1", "unit": "medium", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "3", "unit": "cloves", "optional": false},
+      {"ingredient_id": "cumin", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "paprika", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "feta", "quantity": "1/2", "unit": "cup", "optional": true},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+
+  {
+    "id": "classic-beef-burger",
+    "name": "Classic Beef Burger",
+    "cuisine": "american",
+    "prep_minutes": 20,
+    "servings": 4,
+    "tags": ["quick", "comfort-food"],
+    "instructions": "Shape ground beef loosely into patties, season generously, and sear in a hot pan until a deep crust forms on each side. Melt cheddar over the top in the last minute, then build the burger with lettuce, tomato, onion, mustard, and mayonnaise on a toasted bun.",
+    "ingredients": [
+      {"ingredient_id": "ground-beef", "quantity": "600", "unit": "g", "optional": false},
+      {"ingredient_id": "cheddar", "quantity": "4", "unit": "slices", "optional": false},
+      {"ingredient_id": "bread", "quantity": "4", "unit": "buns", "optional": false},
+      {"ingredient_id": "lettuce", "quantity": "4", "unit": "leaves", "optional": false},
+      {"ingredient_id": "tomato", "quantity": "1", "unit": "large", "optional": false},
+      {"ingredient_id": "onion", "quantity": "1/2", "unit": "small", "optional": false},
+      {"ingredient_id": "mustard", "quantity": "2", "unit": "tbsp", "optional": true},
+      {"ingredient_id": "mayonnaise", "quantity": "2", "unit": "tbsp", "optional": true},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "mac-and-cheese",
+    "name": "Mac and Cheese",
+    "cuisine": "american",
+    "prep_minutes": 30,
+    "servings": 5,
+    "tags": ["vegetarian", "comfort-food"],
+    "instructions": "Make a roux with butter and flour, then whisk in milk until smooth and slightly thickened. Melt in cheddar until glossy, fold in cooked pasta, and if desired top with breadcrumbs and bake until bubbling.",
+    "ingredients": [
+      {"ingredient_id": "pasta", "quantity": "400", "unit": "g", "optional": false},
+      {"ingredient_id": "cheddar", "quantity": "2", "unit": "cups", "optional": false},
+      {"ingredient_id": "milk", "quantity": "2", "unit": "cups", "optional": false},
+      {"ingredient_id": "butter", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "all-purpose-flour", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "breadcrumbs", "quantity": "1/2", "unit": "cup", "optional": true},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "bbq-pulled-pork",
+    "name": "BBQ Pulled Pork",
+    "cuisine": "american",
+    "prep_minutes": 240,
+    "servings": 6,
+    "tags": ["comfort-food", "gluten-free", "dairy-free"],
+    "instructions": "Rub pork shoulder with brown sugar, paprika, and cayenne, then slow-cook until it shreds easily with a fork. Simmer the shredded meat in a tangy sauce of vinegar, tomato paste, and Worcestershire sauce until well coated.",
+    "ingredients": [
+      {"ingredient_id": "pork-shoulder", "quantity": "1.5", "unit": "kg", "optional": false},
+      {"ingredient_id": "brown-sugar", "quantity": "1/4", "unit": "cup", "optional": false},
+      {"ingredient_id": "paprika", "quantity": "2", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "cayenne", "quantity": "1", "unit": "tsp", "optional": true},
+      {"ingredient_id": "vinegar", "quantity": "1/3", "unit": "cup", "optional": false},
+      {"ingredient_id": "worcestershire-sauce", "quantity": "2", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "tomato-paste", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "buttermilk-fried-chicken",
+    "name": "Buttermilk Fried Chicken",
+    "cuisine": "american",
+    "prep_minutes": 60,
+    "servings": 4,
+    "tags": ["comfort-food"],
+    "instructions": "Marinate chicken thigh in buttermilk for a few hours to tenderize. Dredge in seasoned flour, pressing firmly so the coating sticks, then fry until deeply golden and cooked through.",
+    "ingredients": [
+      {"ingredient_id": "chicken-thigh", "quantity": "800", "unit": "g", "optional": false},
+      {"ingredient_id": "buttermilk", "quantity": "2", "unit": "cups", "optional": false},
+      {"ingredient_id": "all-purpose-flour", "quantity": "2", "unit": "cups", "optional": false},
+      {"ingredient_id": "paprika", "quantity": "1", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "cayenne", "quantity": "1", "unit": "tsp", "optional": true},
+      {"ingredient_id": "black-pepper", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "vegetable-oil", "quantity": "4", "unit": "cups", "optional": false},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "corn-chowder",
+    "name": "Corn Chowder",
+    "cuisine": "american",
+    "prep_minutes": 40,
+    "servings": 5,
+    "tags": ["comfort-food"],
+    "instructions": "Render bacon until crisp and set aside, then sauté onion and celery in the rendered fat. Add diced potato, corn, and stock, simmer until the potato is tender, then stir in cream and top with the crispy bacon.",
+    "ingredients": [
+      {"ingredient_id": "corn", "quantity": "4", "unit": "ears", "optional": false},
+      {"ingredient_id": "potato", "quantity": "3", "unit": "medium", "optional": false},
+      {"ingredient_id": "bacon", "quantity": "150", "unit": "g", "optional": false},
+      {"ingredient_id": "onion", "quantity": "1", "unit": "medium", "optional": false},
+      {"ingredient_id": "celery", "quantity": "2", "unit": "stalks", "optional": false},
+      {"ingredient_id": "heavy-cream", "quantity": "1/2", "unit": "cup", "optional": false},
+      {"ingredient_id": "thyme", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+
+  {
+    "id": "braised-chicken-mushroom",
+    "name": "Braised Chicken with Mushroom and Bacon",
+    "cuisine": "french",
+    "prep_minutes": 60,
+    "servings": 4,
+    "tags": ["comfort-food", "gluten-free", "dairy-free"],
+    "instructions": "Brown chicken thigh and bacon, then set aside. Soften onion, garlic, and mushroom in the rendered fat, return the chicken with thyme and bay leaf, and braise gently until the chicken is fall-apart tender.",
+    "ingredients": [
+      {"ingredient_id": "chicken-thigh", "quantity": "800", "unit": "g", "optional": false},
+      {"ingredient_id": "bacon", "quantity": "150", "unit": "g", "optional": false},
+      {"ingredient_id": "mushroom", "quantity": "250", "unit": "g", "optional": false},
+      {"ingredient_id": "onion", "quantity": "1", "unit": "medium", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "3", "unit": "cloves", "optional": false},
+      {"ingredient_id": "thyme", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "bay-leaf", "quantity": "2", "unit": "leaves", "optional": false},
+      {"ingredient_id": "butter", "quantity": "2", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "ratatouille",
+    "name": "Ratatouille",
+    "cuisine": "french",
+    "prep_minutes": 50,
+    "servings": 4,
+    "tags": ["vegetarian", "vegan", "gluten-free", "dairy-free"],
+    "instructions": "Roast or pan-cook eggplant, zucchini, and bell pepper separately so each keeps its own texture. Combine with a garlicky tomato base seasoned with thyme, and simmer everything together gently until the flavors meld.",
+    "ingredients": [
+      {"ingredient_id": "eggplant", "quantity": "1", "unit": "medium", "optional": false},
+      {"ingredient_id": "zucchini", "quantity": "2", "unit": "medium", "optional": false},
+      {"ingredient_id": "bell-pepper", "quantity": "1", "unit": "whole", "optional": false},
+      {"ingredient_id": "tomato", "quantity": "4", "unit": "medium", "optional": false},
+      {"ingredient_id": "onion", "quantity": "1", "unit": "medium", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "3", "unit": "cloves", "optional": false},
+      {"ingredient_id": "thyme", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "olive-oil", "quantity": "1/4", "unit": "cup", "optional": false},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "french-onion-soup",
+    "name": "French Onion Soup",
+    "cuisine": "french",
+    "prep_minutes": 70,
+    "servings": 4,
+    "tags": ["vegetarian", "comfort-food"],
+    "instructions": "Cook sliced onion low and slow in butter until deeply caramelized, nearly an hour of patience. Add stock with thyme and bay leaf and simmer, then ladle into bowls, top with toasted bread and melted cheddar under the broiler.",
+    "ingredients": [
+      {"ingredient_id": "onion", "quantity": "5", "unit": "large", "optional": false},
+      {"ingredient_id": "butter", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "thyme", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "bay-leaf", "quantity": "1", "unit": "leaf", "optional": false},
+      {"ingredient_id": "bread", "quantity": "4", "unit": "slices", "optional": false},
+      {"ingredient_id": "cheddar", "quantity": "1", "unit": "cup", "optional": false},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "quiche-lorraine",
+    "name": "Quiche Lorraine",
+    "cuisine": "french",
+    "prep_minutes": 55,
+    "servings": 6,
+    "tags": ["comfort-food"],
+    "instructions": "Blind-bake a butter and flour pastry shell until lightly golden. Scatter crisped bacon and cheddar inside, pour over a custard of whisked eggs and cream, and bake until just set with a gentle wobble in the center.",
+    "ingredients": [
+      {"ingredient_id": "eggs", "quantity": "4", "unit": "whole", "optional": false},
+      {"ingredient_id": "heavy-cream", "quantity": "1", "unit": "cup", "optional": false},
+      {"ingredient_id": "bacon", "quantity": "150", "unit": "g", "optional": false},
+      {"ingredient_id": "cheddar", "quantity": "1", "unit": "cup", "optional": false},
+      {"ingredient_id": "all-purpose-flour", "quantity": "1.5", "unit": "cups", "optional": false},
+      {"ingredient_id": "butter", "quantity": "1/2", "unit": "cup", "optional": false},
+      {"ingredient_id": "onion", "quantity": "1/2", "unit": "small", "optional": true},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "crepes",
+    "name": "Crepes",
+    "cuisine": "french",
+    "prep_minutes": 30,
+    "servings": 4,
+    "tags": ["vegetarian", "quick"],
+    "instructions": "Whisk flour, eggs, milk, melted butter, sugar, and vanilla into a thin, lump-free batter. Rest briefly, then cook a thin layer at a time in a hot buttered pan, flipping once golden spots appear.",
+    "ingredients": [
+      {"ingredient_id": "all-purpose-flour", "quantity": "1", "unit": "cup", "optional": false},
+      {"ingredient_id": "eggs", "quantity": "2", "unit": "whole", "optional": false},
+      {"ingredient_id": "milk", "quantity": "1.5", "unit": "cups", "optional": false},
+      {"ingredient_id": "butter", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "sugar", "quantity": "1", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "vanilla", "quantity": "1", "unit": "tsp", "optional": true},
+      {"ingredient_id": "salt", "quantity": "1", "unit": "pinch", "optional": false}
+    ]
+  },
+
+  {
+    "id": "chicken-shawarma",
+    "name": "Chicken Shawarma",
+    "cuisine": "middle-eastern",
+    "prep_minutes": 35,
+    "servings": 4,
+    "tags": ["gluten-free"],
+    "instructions": "Marinate chicken thigh in yogurt, garlic, lemon, and a warm spice blend of cumin, coriander, paprika, and turmeric. Roast or pan-sear until charred at the edges and cooked through, then slice thinly.",
+    "ingredients": [
+      {"ingredient_id": "chicken-thigh", "quantity": "700", "unit": "g", "optional": false},
+      {"ingredient_id": "yogurt", "quantity": "1/2", "unit": "cup", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "3", "unit": "cloves", "optional": false},
+      {"ingredient_id": "lemon", "quantity": "1", "unit": "whole", "optional": false},
+      {"ingredient_id": "cumin", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "coriander", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "paprika", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "turmeric", "quantity": "1/2", "unit": "tsp", "optional": false},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "baba-ganoush",
+    "name": "Baba Ganoush",
+    "cuisine": "middle-eastern",
+    "prep_minutes": 40,
+    "servings": 4,
+    "tags": ["vegetarian", "vegan", "gluten-free", "dairy-free"],
+    "instructions": "Char whole eggplant over a flame or under a broiler until the skin blisters and the flesh collapses. Scoop out the smoky flesh and mash with tahini, lemon, garlic, and cumin into a coarse, silky dip.",
+    "ingredients": [
+      {"ingredient_id": "eggplant", "quantity": "2", "unit": "large", "optional": false},
+      {"ingredient_id": "tahini", "quantity": "1/4", "unit": "cup", "optional": false},
+      {"ingredient_id": "lemon", "quantity": "1", "unit": "whole", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "2", "unit": "cloves", "optional": false},
+      {"ingredient_id": "olive-oil", "quantity": "2", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "cumin", "quantity": "1/2", "unit": "tsp", "optional": false},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "tabbouleh",
+    "name": "Tabbouleh",
+    "cuisine": "middle-eastern",
+    "prep_minutes": 25,
+    "servings": 4,
+    "tags": ["vegetarian", "vegan", "dairy-free", "quick"],
+    "instructions": "Cook quinoa and let it cool completely. Toss with a generous amount of finely chopped parsley and mint, diced tomato, and scallion, then dress with lemon juice and olive oil.",
+    "ingredients": [
+      {"ingredient_id": "quinoa", "quantity": "1", "unit": "cup", "optional": false},
+      {"ingredient_id": "parsley", "quantity": "1", "unit": "cup", "optional": false},
+      {"ingredient_id": "mint", "quantity": "1/4", "unit": "cup", "optional": false},
+      {"ingredient_id": "tomato", "quantity": "2", "unit": "medium", "optional": false},
+      {"ingredient_id": "scallion", "quantity": "3", "unit": "stalks", "optional": false},
+      {"ingredient_id": "lemon", "quantity": "1", "unit": "whole", "optional": false},
+      {"ingredient_id": "olive-oil", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "beef-kofta",
+    "name": "Beef Kofta",
+    "cuisine": "middle-eastern",
+    "prep_minutes": 30,
+    "servings": 4,
+    "tags": ["gluten-free", "dairy-free", "quick"],
+    "instructions": "Mix ground beef with grated onion, garlic, cumin, coriander, and parsley, then shape onto skewers or into oblong patties. Grill or pan-sear until charred outside and juicy within.",
+    "ingredients": [
+      {"ingredient_id": "ground-beef", "quantity": "600", "unit": "g", "optional": false},
+      {"ingredient_id": "onion", "quantity": "1", "unit": "small", "optional": false},
+      {"ingredient_id": "garlic", "quantity": "2", "unit": "cloves", "optional": false},
+      {"ingredient_id": "cumin", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "coriander", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "paprika", "quantity": "1", "unit": "tsp", "optional": false},
+      {"ingredient_id": "parsley", "quantity": "2", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  },
+  {
+    "id": "harissa-roasted-vegetables",
+    "name": "Harissa Roasted Vegetables",
+    "cuisine": "middle-eastern",
+    "prep_minutes": 40,
+    "servings": 4,
+    "tags": ["vegetarian", "vegan", "gluten-free", "dairy-free", "spicy"],
+    "instructions": "Toss carrot, cauliflower, and chickpeas with harissa and olive oil, then roast at high heat until caramelized at the edges. Finish with a squeeze of lemon and a scatter of cilantro.",
+    "ingredients": [
+      {"ingredient_id": "carrot", "quantity": "3", "unit": "medium", "optional": false},
+      {"ingredient_id": "cauliflower", "quantity": "1", "unit": "head", "optional": false},
+      {"ingredient_id": "chickpeas", "quantity": "1", "unit": "can", "optional": false},
+      {"ingredient_id": "harissa", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "olive-oil", "quantity": "3", "unit": "tbsp", "optional": false},
+      {"ingredient_id": "lemon", "quantity": "1", "unit": "whole", "optional": false},
+      {"ingredient_id": "cilantro", "quantity": "2", "unit": "tbsp", "optional": true},
+      {"ingredient_id": "salt", "quantity": "to taste", "unit": "", "optional": false}
+    ]
+  }
+]

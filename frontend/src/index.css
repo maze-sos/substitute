@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-cream: #fbf6ee;
+  --color-cream-dim: #f3ecdf;
+  --color-sand: #ece1cd;
+  --color-sand-dark: #ddceb0;
+  --color-ink: #2b2420;
+  --color-ink-soft: #52463c;
+  --color-muted: #8a7d6d;
+  --color-terracotta: #c1583a;
+  --color-terracotta-dark: #a3462c;
+  --color-olive: #6b7a4f;
+  --color-olive-dark: #566440;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background-color: var(--color-terracotta);
+  color: var(--color-cream);
+}

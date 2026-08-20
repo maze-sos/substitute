@@ -1,0 +1,10 @@
+[
+  {"id": "vegetarian", "name": "Vegetarian"},
+  {"id": "vegan", "name": "Vegan"},
+  {"id": "gluten-free", "name": "Gluten-free"},
+  {"id": "dairy-free", "name": "Dairy-free"},
+  {"id": "nut-free", "name": "Nut-free"},
+  {"id": "spicy", "name": "Spicy"},
+  {"id": "quick", "name": "Quick (under 30 min)"},
+  {"id": "comfort-food", "name": "Comfort food"}
+]

@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: substitute-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: BOLT_URI
+        sync: false
+      - key: BOLT_USER
+        sync: false
+      - key: BOLT_PASSWORD
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false
