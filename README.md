@@ -1,4 +1,4 @@
-# Substitute 🥘
+# Substitute 
 
 A kitchen companion backed by a graph database. Add what's in your pantry and
 find recipes you can make outright — or almost make, bridged by a chain of
@@ -8,7 +8,7 @@ substitutions.
 
 Built for the Wexa AI CognoDB take-home assignment.
 
-- **Live demo:** _TBD — add hosted URL after deployment_
+- **Live demo:** [substitute-nu.vercel.app](https://substitute-nu.vercel.app/)
 - **Screen recording:** _TBD — add link after recording_
 
 ## Contents
@@ -58,23 +58,23 @@ paths and neighborhoods, not row lookups.
 
 **Nodes**
 
-| Label | Key properties |
-|---|---|
-| `Recipe` | `id`, `name`, `instructions`, `cuisine`, `prep_minutes`, `servings` |
-| `Ingredient` | `id`, `name`, `category` |
-| `FlavorCompound` | `id`, `name` |
-| `Cuisine` | `id`, `name` |
-| `DietaryTag` | `id`, `name` |
+| Label              | Key properties                                                                  |
+| ------------------ | ------------------------------------------------------------------------------- |
+| `Recipe`         | `id`, `name`, `instructions`, `cuisine`, `prep_minutes`, `servings` |
+| `Ingredient`     | `id`, `name`, `category`                                                  |
+| `FlavorCompound` | `id`, `name`                                                                |
+| `Cuisine`        | `id`, `name`                                                                |
+| `DietaryTag`     | `id`, `name`                                                                |
 
 **Relationships**
 
-| Relationship | Properties | Meaning |
-|---|---|---|
-| `(Recipe)-[:USES]->(Ingredient)` | `quantity`, `unit`, `optional` | This recipe calls for this ingredient |
-| `(Ingredient)-[:SUBSTITUTES_FOR]->(Ingredient)` | `ratio`, `note` | One ingredient can stand in for another |
-| `(Ingredient)-[:CONTAINS_COMPOUND]->(FlavorCompound)` | — | Shared aroma/flavor chemistry |
-| `(Recipe)-[:BELONGS_TO]->(Cuisine)` | — | Recipe's cuisine |
-| `(Recipe)-[:HAS_TAG]->(DietaryTag)` | — | e.g. vegetarian, gluten-free, quick |
+| Relationship                                            | Properties                           | Meaning                                 |
+| ------------------------------------------------------- | ------------------------------------ | --------------------------------------- |
+| `(Recipe)-[:USES]->(Ingredient)`                      | `quantity`, `unit`, `optional` | This recipe calls for this ingredient   |
+| `(Ingredient)-[:SUBSTITUTES_FOR]->(Ingredient)`       | `ratio`, `note`                  | One ingredient can stand in for another |
+| `(Ingredient)-[:CONTAINS_COMPOUND]->(FlavorCompound)` | —                                   | Shared aroma/flavor chemistry           |
+| `(Recipe)-[:BELONGS_TO]->(Cuisine)`                   | —                                   | Recipe's cuisine                        |
+| `(Recipe)-[:HAS_TAG]->(DietaryTag)`                   | —                                   | e.g. vegetarian, gluten-free, quick     |
 
 ```mermaid
 graph LR
