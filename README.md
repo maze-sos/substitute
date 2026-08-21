@@ -9,7 +9,7 @@ substitutions.
 Built for the Wexa AI CognoDB take-home assignment.
 
 - **Live demo:** [substitute-nu.vercel.app](https://substitute-nu.vercel.app/)
-- **Screen recording:** [google drive link](https://drive.google.com/file/d/134g3BfJj1Kkvkeej9hPZsH3Nr4UXyHWU/view?usp=sharing)
+- **Screen recording:** [google drive link](https://drive.google.com/file/d/1DqUBEH7b6fFraQ2ihMIy0Ojb2L1g5A6A/view?usp=sharing)
 
 ## Contents
 
