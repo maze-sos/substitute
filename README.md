@@ -227,8 +227,26 @@ quantity/unit/optional properties) and dietary tags in one round trip.
 
 ## Deployment
 
-- **Backend** → [Render](https://render.com) free web service. `backend/render.yaml` defines the service; set `BOLT_URI`, `BOLT_USER`, `BOLT_PASSWORD`, and `CORS_ORIGINS` (your deployed frontend origin) in the Render dashboard.
-- **Frontend** → [Vercel](https://vercel.com) or [Netlify](https://netlify.com), pointed at `frontend/`. Set `VITE_API_BASE_URL` to the deployed backend URL.
+Both frontend and backend deploy together as one [Vercel](https://vercel.com)
+project using [Vercel Services](https://vercel.com/docs/services) — the root
+`vercel.json` defines a `frontend` (Vite) and `backend` (FastAPI) service under
+one domain, with `/api/*` routed to the backend and everything else to the
+frontend. Because they share an origin, the browser never makes a cross-origin
+request, so no CORS configuration is needed in production.
+
+Required environment variables, set in the Vercel project dashboard (never
+committed):
+
+- **backend service**: `BOLT_URI`, `BOLT_USER`, `BOLT_PASSWORD` (from your
+  CognoDB instance).
+- **frontend service**: `VITE_API_BASE_URL` set to an empty string, so API
+  calls resolve to relative `/api/...` paths through the same-origin rewrite.
+
+A standalone `backend/render.yaml` is also kept in the repo as a fallback if
+you'd rather split the backend onto [Render](https://render.com) and the
+frontend onto Vercel/Netlify separately — in that case set `CORS_ORIGINS` on
+the backend to the frontend's deployed origin, and `VITE_API_BASE_URL` on the
+frontend to the backend's full URL.
 
 After deploying, remember to keep the CognoDB instance running so the hosted
 demo stays live.

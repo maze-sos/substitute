@@ -10,7 +10,11 @@ import type {
   SubstitutionPath,
 } from "../types";
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:8000";
+// Falls back to a relative path (same-origin) in production builds, since
+// that's correct when frontend and backend are deployed as Vercel services
+// under one domain — only local `vite dev` needs an absolute backend URL.
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL ?? (import.meta.env.DEV ? "http://localhost:8000" : "");
 
 export class ApiError extends Error {
   status: number;
